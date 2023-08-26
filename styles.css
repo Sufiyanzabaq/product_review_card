@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 600px;
+    margin: 10px;
+
+}
+.cart{
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.text{
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+.cart p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+}
+
+.discription{
+    line-height: 1.5;
+}
+
+.Perfume{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.cart h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    color: hsl(212, 21%, 14%);
+    margin: 20px 0;
+}
+
+.price-container{
+    display: flex;
+    align-items: center;
+}
+
+h1.price{
+    color: hsl(158, 36%, 37%);
+}
+
+.cart .price{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.original{
+    text-decoration: line-through;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(30, 38%, 92%);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+button:hover{
+        background-color: hsl(157, 92%, 10%);
+}
+
+.btn svg{
+    margin-right: 8px;
+}
+
+@media (min-width: 650px) {
+    .cart{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cart img{
+        height: 100%;
+    }
+
+    .text{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
